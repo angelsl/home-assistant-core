@@ -783,6 +783,9 @@ getmac==0.9.4
 # homeassistant.components.gios
 gios==4.0.0
 
+# homeassistant.components.xiaomi_miio
+git+https://github.com/rytilahti/python-miio.git@658ee2e82e54233372f19e4f67bbf055b60eaee4
+
 # homeassistant.components.glances
 glances-api==0.8.0
 
@@ -1767,9 +1770,6 @@ python-kasa[speedups]==0.6.2.1
 
 # homeassistant.components.matter
 python-matter-server==6.1.0
-
-# homeassistant.components.xiaomi_miio
-python-miio==0.5.12
 
 # homeassistant.components.mystrom
 python-mystrom==2.2.0
