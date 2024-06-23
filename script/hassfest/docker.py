@@ -29,7 +29,6 @@ COPY requirements.txt homeassistant/
 COPY homeassistant/package_constraints.txt homeassistant/homeassistant/
 RUN \
     uv pip install \
-        --no-build \
         -r homeassistant/requirements.txt
 
 COPY requirements_all.txt home_assistant_frontend-* home_assistant_intents-* homeassistant/
@@ -39,11 +38,9 @@ RUN \
     fi \
     && if [ "${{BUILD_ARCH}}" = "i386" ]; then \
         linux32 uv pip install \
-            --no-build \
             -r homeassistant/requirements_all.txt; \
     else \
         uv pip install \
-            --no-build \
             -r homeassistant/requirements_all.txt; \
     fi
 
